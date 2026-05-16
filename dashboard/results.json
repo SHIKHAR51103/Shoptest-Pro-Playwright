@@ -1,0 +1,321 @@
+{
+  "session": {
+    "started_at": "2026-05-16T20:21:12.790161",
+    "finished_at": "2026-05-16T20:23:12.054713",
+    "duration_s": 119.3
+  },
+  "summary": {
+    "total": 38,
+    "passed": 38,
+    "failed": 0,
+    "skipped": 0,
+    "pass_rate": 100.0
+  },
+  "tests": [
+    {
+      "name": "test_get_all_posts",
+      "nodeid": "tests/api/test_api.py::test_get_all_posts",
+      "file": "test_api.py",
+      "status": "pass",
+      "duration": 1.15,
+      "error": null
+    },
+    {
+      "name": "test_get_single_post",
+      "nodeid": "tests/api/test_api.py::test_get_single_post",
+      "file": "test_api.py",
+      "status": "pass",
+      "duration": 0.47,
+      "error": null
+    },
+    {
+      "name": "test_get_post_not_found",
+      "nodeid": "tests/api/test_api.py::test_get_post_not_found",
+      "file": "test_api.py",
+      "status": "pass",
+      "duration": 1.15,
+      "error": null
+    },
+    {
+      "name": "test_get_comments_for_post",
+      "nodeid": "tests/api/test_api.py::test_get_comments_for_post",
+      "file": "test_api.py",
+      "status": "pass",
+      "duration": 0.76,
+      "error": null
+    },
+    {
+      "name": "test_create_post",
+      "nodeid": "tests/api/test_api.py::test_create_post",
+      "file": "test_api.py",
+      "status": "pass",
+      "duration": 0.8,
+      "error": null
+    },
+    {
+      "name": "test_update_post",
+      "nodeid": "tests/api/test_api.py::test_update_post",
+      "file": "test_api.py",
+      "status": "pass",
+      "duration": 0.84,
+      "error": null
+    },
+    {
+      "name": "test_delete_post",
+      "nodeid": "tests/api/test_api.py::test_delete_post",
+      "file": "test_api.py",
+      "status": "pass",
+      "duration": 1.22,
+      "error": null
+    },
+    {
+      "name": "test_get_users",
+      "nodeid": "tests/api/test_api.py::test_get_users",
+      "file": "test_api.py",
+      "status": "pass",
+      "duration": 0.69,
+      "error": null
+    },
+    {
+      "name": "test_get_multiple_posts_parametrized[1]",
+      "nodeid": "tests/api/test_api.py::test_get_multiple_posts_parametrized[1]",
+      "file": "test_api.py",
+      "status": "pass",
+      "duration": 0.58,
+      "error": null
+    },
+    {
+      "name": "test_get_multiple_posts_parametrized[5]",
+      "nodeid": "tests/api/test_api.py::test_get_multiple_posts_parametrized[5]",
+      "file": "test_api.py",
+      "status": "pass",
+      "duration": 0.55,
+      "error": null
+    },
+    {
+      "name": "test_get_multiple_posts_parametrized[10]",
+      "nodeid": "tests/api/test_api.py::test_get_multiple_posts_parametrized[10]",
+      "file": "test_api.py",
+      "status": "pass",
+      "duration": 0.81,
+      "error": null
+    },
+    {
+      "name": "test_get_multiple_posts_parametrized[50]",
+      "nodeid": "tests/api/test_api.py::test_get_multiple_posts_parametrized[50]",
+      "file": "test_api.py",
+      "status": "pass",
+      "duration": 0.86,
+      "error": null
+    },
+    {
+      "name": "test_get_multiple_posts_parametrized[100]",
+      "nodeid": "tests/api/test_api.py::test_get_multiple_posts_parametrized[100]",
+      "file": "test_api.py",
+      "status": "pass",
+      "duration": 1.11,
+      "error": null
+    },
+    {
+      "name": "test_complete_purchase_single_item[chromium]",
+      "nodeid": "tests/ui/test_checkout.py::test_complete_purchase_single_item[chromium]",
+      "file": "test_checkout.py",
+      "status": "pass",
+      "duration": 1.35,
+      "error": null
+    },
+    {
+      "name": "test_complete_purchase_multiple_items[chromium]",
+      "nodeid": "tests/ui/test_checkout.py::test_complete_purchase_multiple_items[chromium]",
+      "file": "test_checkout.py",
+      "status": "pass",
+      "duration": 1.09,
+      "error": null
+    },
+    {
+      "name": "test_checkout_missing_first_name[chromium]",
+      "nodeid": "tests/ui/test_checkout.py::test_checkout_missing_first_name[chromium]",
+      "file": "test_checkout.py",
+      "status": "pass",
+      "duration": 0.8,
+      "error": null
+    },
+    {
+      "name": "test_checkout_missing_last_name[chromium]",
+      "nodeid": "tests/ui/test_checkout.py::test_checkout_missing_last_name[chromium]",
+      "file": "test_checkout.py",
+      "status": "pass",
+      "duration": 0.81,
+      "error": null
+    },
+    {
+      "name": "test_checkout_missing_zip[chromium]",
+      "nodeid": "tests/ui/test_checkout.py::test_checkout_missing_zip[chromium]",
+      "file": "test_checkout.py",
+      "status": "pass",
+      "duration": 0.69,
+      "error": null
+    },
+    {
+      "name": "test_checkout_various_shipping_info[chromium-Amit-Kumar-400001]",
+      "nodeid": "tests/ui/test_checkout.py::test_checkout_various_shipping_info[chromium-Amit-Kumar-400001]",
+      "file": "test_checkout.py",
+      "status": "pass",
+      "duration": 0.76,
+      "error": null
+    },
+    {
+      "name": "test_checkout_various_shipping_info[chromium-Priya-Verma-600001]",
+      "nodeid": "tests/ui/test_checkout.py::test_checkout_various_shipping_info[chromium-Priya-Verma-600001]",
+      "file": "test_checkout.py",
+      "status": "pass",
+      "duration": 0.89,
+      "error": null
+    },
+    {
+      "name": "test_checkout_various_shipping_info[chromium-Vikram-Singh-700001]",
+      "nodeid": "tests/ui/test_checkout.py::test_checkout_various_shipping_info[chromium-Vikram-Singh-700001]",
+      "file": "test_checkout.py",
+      "status": "pass",
+      "duration": 0.88,
+      "error": null
+    },
+    {
+      "name": "test_inventory_page_loads[chromium]",
+      "nodeid": "tests/ui/test_inventory.py::test_inventory_page_loads[chromium]",
+      "file": "test_inventory.py",
+      "status": "pass",
+      "duration": 0.14,
+      "error": null
+    },
+    {
+      "name": "test_sort_name_a_to_z[chromium]",
+      "nodeid": "tests/ui/test_inventory.py::test_sort_name_a_to_z[chromium]",
+      "file": "test_inventory.py",
+      "status": "pass",
+      "duration": 0.15,
+      "error": null
+    },
+    {
+      "name": "test_sort_name_z_to_a[chromium]",
+      "nodeid": "tests/ui/test_inventory.py::test_sort_name_z_to_a[chromium]",
+      "file": "test_inventory.py",
+      "status": "pass",
+      "duration": 0.16,
+      "error": null
+    },
+    {
+      "name": "test_sort_price_low_to_high[chromium]",
+      "nodeid": "tests/ui/test_inventory.py::test_sort_price_low_to_high[chromium]",
+      "file": "test_inventory.py",
+      "status": "pass",
+      "duration": 0.13,
+      "error": null
+    },
+    {
+      "name": "test_sort_price_high_to_low[chromium]",
+      "nodeid": "tests/ui/test_inventory.py::test_sort_price_high_to_low[chromium]",
+      "file": "test_inventory.py",
+      "status": "pass",
+      "duration": 0.14,
+      "error": null
+    },
+    {
+      "name": "test_add_single_item_to_cart[chromium]",
+      "nodeid": "tests/ui/test_inventory.py::test_add_single_item_to_cart[chromium]",
+      "file": "test_inventory.py",
+      "status": "pass",
+      "duration": 0.15,
+      "error": null
+    },
+    {
+      "name": "test_add_multiple_items_to_cart[chromium]",
+      "nodeid": "tests/ui/test_inventory.py::test_add_multiple_items_to_cart[chromium]",
+      "file": "test_inventory.py",
+      "status": "pass",
+      "duration": 0.4,
+      "error": null
+    },
+    {
+      "name": "test_remove_item_from_cart[chromium]",
+      "nodeid": "tests/ui/test_inventory.py::test_remove_item_from_cart[chromium]",
+      "file": "test_inventory.py",
+      "status": "pass",
+      "duration": 0.37,
+      "error": null
+    },
+    {
+      "name": "test_cart_empty_after_removing_all[chromium]",
+      "nodeid": "tests/ui/test_inventory.py::test_cart_empty_after_removing_all[chromium]",
+      "file": "test_inventory.py",
+      "status": "pass",
+      "duration": 0.28,
+      "error": null
+    },
+    {
+      "name": "test_valid_login[chromium]",
+      "nodeid": "tests/ui/test_login.py::test_valid_login[chromium]",
+      "file": "test_login.py",
+      "status": "pass",
+      "duration": 3.33,
+      "error": null
+    },
+    {
+      "name": "test_locked_out_user[chromium]",
+      "nodeid": "tests/ui/test_login.py::test_locked_out_user[chromium]",
+      "file": "test_login.py",
+      "status": "pass",
+      "duration": 1.9,
+      "error": null
+    },
+    {
+      "name": "test_empty_credentials[chromium]",
+      "nodeid": "tests/ui/test_login.py::test_empty_credentials[chromium]",
+      "file": "test_login.py",
+      "status": "pass",
+      "duration": 1.84,
+      "error": null
+    },
+    {
+      "name": "test_empty_password[chromium]",
+      "nodeid": "tests/ui/test_login.py::test_empty_password[chromium]",
+      "file": "test_login.py",
+      "status": "pass",
+      "duration": 1.95,
+      "error": null
+    },
+    {
+      "name": "test_invalid_login_combinations[chromium-wrong_user-secret_sauce-Username and password do not match]",
+      "nodeid": "tests/ui/test_login.py::test_invalid_login_combinations[chromium-wrong_user-secret_sauce-Username and password do not match]",
+      "file": "test_login.py",
+      "status": "pass",
+      "duration": 3.39,
+      "error": null
+    },
+    {
+      "name": "test_invalid_login_combinations[chromium-standard_user-wrong_pass-Username and password do not match]",
+      "nodeid": "tests/ui/test_login.py::test_invalid_login_combinations[chromium-standard_user-wrong_pass-Username and password do not match]",
+      "file": "test_login.py",
+      "status": "pass",
+      "duration": 3.14,
+      "error": null
+    },
+    {
+      "name": "test_invalid_login_combinations[chromium--secret_sauce-Username is required]",
+      "nodeid": "tests/ui/test_login.py::test_invalid_login_combinations[chromium--secret_sauce-Username is required]",
+      "file": "test_login.py",
+      "status": "pass",
+      "duration": 2.09,
+      "error": null
+    },
+    {
+      "name": "test_logout[chromium]",
+      "nodeid": "tests/ui/test_login.py::test_logout[chromium]",
+      "file": "test_login.py",
+      "status": "pass",
+      "duration": 2.91,
+      "error": null
+    }
+  ],
+  "failures": []
+}

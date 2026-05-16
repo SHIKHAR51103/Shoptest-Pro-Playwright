@@ -1,0 +1,70 @@
+name: ShopTest Pro — Playwright CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      matrix:
+        browser: [chromium, firefox]
+      fail-fast: false
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Playwright browsers
+        run: playwright install --with-deps ${{ matrix.browser }}
+
+      - name: Run smoke tests first
+        run: |
+          pytest -m smoke --browser ${{ matrix.browser }} --headed=false \
+            --html=reports/smoke_${{ matrix.browser }}.html --self-contained-html -v
+        env:
+          BASE_URL: ${{ secrets.BASE_URL || 'https://www.saucedemo.com' }}
+          STANDARD_USER: ${{ secrets.STANDARD_USER || 'standard_user' }}
+          PASSWORD: ${{ secrets.PASSWORD || 'secret_sauce' }}
+          API_BASE_URL: https://jsonplaceholder.typicode.com
+
+      - name: Run full suite
+        if: success()
+        run: |
+          pytest --browser ${{ matrix.browser }} --headed=false \
+            --html=reports/full_${{ matrix.browser }}.html --self-contained-html \
+            --tracing=retain-on-failure -v
+        env:
+          BASE_URL: ${{ secrets.BASE_URL || 'https://www.saucedemo.com' }}
+          STANDARD_USER: ${{ secrets.STANDARD_USER || 'standard_user' }}
+          PASSWORD: ${{ secrets.PASSWORD || 'secret_sauce' }}
+          API_BASE_URL: https://jsonplaceholder.typicode.com
+
+      - name: Upload reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reports-${{ matrix.browser }}
+          path: reports/
+          retention-days: 30
+
+      - name: Upload traces on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: traces-${{ matrix.browser }}
+          path: test-results/
+          retention-days: 7
